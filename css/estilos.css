@@ -1,0 +1,144 @@
+/* Importación de fuentes amigables desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --color-fondo: #f8fafd;
+    --color-primario: #4facfe;
+    --color-secundario: #00f2fe;
+    --color-texto: #2c3e50;
+    --color-tarjeta: #ffffff;
+    --color-acento: #ff6b6b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del Menú */
+.menu-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 8%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+.logo {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-primario);
+}
+.enlaces {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+.enlaces a {
+    text-decoration: none;
+    color: #7f8c8d;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.enlaces a:hover, .enlaces a.activo {
+    color: var(--color-primario);
+}
+
+/* Banner de Impacto (Estilo Moderno e Infantil) */
+.banner-home {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+    border-radius: 0 0 40px 40px; /* Curvatura moderna inferior */
+}
+.banner-contenido h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+.banner-contenido p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+.boton-accion {
+    display: inline-block;
+    background: var(--color-acento);
+    color: white;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.boton-accion:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+}
+
+/* Cuadrícula de Cuentos */
+.seccion-lecturas {
+    padding: 40px 8%;
+}
+.titulo-seccion {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+.cuadricula-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.tarjeta-cuento {
+    background: var(--color-tarjeta);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid #edf2f7;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.tarjeta-cuento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+.badge-edad {
+    display: inline-block;
+    background: #e3fafc;
+    color: #0c8599;
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.tarjeta-cuento h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.4rem;
+    margin: 0 0 12px 0;
+}
+.tarjeta-cuento p {
+    color: #5a6a85;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.boton-leer {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.boton-leer:hover {
+    color: #2b6cb0;
+}
