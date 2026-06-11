@@ -18,8 +18,8 @@
         </ul>
     </nav>
 
-    <!-- Contenedor principal centrado -->
-    <main style="max-width: 600px; margin: 50px auto; padding: 0 25px;">
+    <!-- Contenedor principal (Se amplió a 950px para dar espacio a las dos columnas) -->
+    <main style="max-width: 950px; margin: 50px auto; padding: 0 25px;">
         <p style="margin-bottom: 30px;">
             <a href="../index.html" style="text-decoration: none; color: #4facfe; font-weight: 600; font-size: 0.95rem;">← Volver al inicio</a>
         </p>
@@ -31,46 +31,57 @@
             <p style="color: #7f8c8d; font-style: italic; font-size: 1.05rem; margin: 0;">por Adriano del Valle</p>
         </header>
         
-        <!-- Cuerpo del Poema estructurado por estrofas -->
-        <article style="font-size: 1.35rem; line-height: 2; color: #2c3e50; text-align: center; background: #ffffff; padding: 40px 30px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); border: 1px solid #edf2f7;">
+        <!-- CONTENEDOR DE DOS COLUMNAS DE RESPUESTA FLEXIBLE -->
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center;">
             
-            <!-- Estrofa 1 -->
-            <p style="margin: 0 0 35px 0;">
-                El elefante lloraba<br>
-                porque no quería dormir…<br>
-                <strong>Duerme, elefantito mío,</strong><br>
-                <strong>que la luna te va a oír…</strong>
-            </p>
-            
-            <!-- Estrofa 2 -->
-            <p style="margin: 0 0 35px 0;">
-                Papá elefante está cerca;<br>
-                se oye en el manglar mugir.<br>
-                <strong>Duerme, elefantito mío,</strong><br>
-                <strong>que la luna te va a oír…</strong>
-            </p>
-            
-            <!-- Estrofa 3 -->
-            <p style="margin: 0 0 35px 0;">
-                El elefante lloraba<br>
-                con un aire de infeliz<br>
-                y alzaba su trompa al viento;<br>
-                parecía que en la luna<br>
-                se limpiaba la nariz…
-            </p>
-            
-            <!-- Estrofa 4 -->
-            <p style="margin: 0;">
-                Duerme, elefantito mío;<br>
-                ¿por qué no quieres dormir?<br>
-                —Estoy mirando la luna<br>
-                que muy pronto se va a ir.
-            </p>
-            
-        </article>
+            <!-- COLUMNA 1: Cuerpo del Poema estructurado -->
+            <article style="flex: 1; min-width: 290px; font-size: 1.35rem; line-height: 2; color: #2c3e50; text-align: center; background: #ffffff; padding: 40px 30px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); border: 1px solid #edf2f7; margin: 0;">
+                
+                <!-- Estrofa 1 -->
+                <p style="margin: 0 0 35px 0;">
+                    El elefante lloraba<br>
+                    porque no quería dormir…<br>
+                    <strong>Duerme, elefantito mío,</strong><br>
+                    <strong>que la luna te va a oír…</strong>
+                </p>
+                
+                <!-- Estrofa 2 -->
+                <p style="margin: 0 0 35px 0;">
+                    Papá elefante está cerca;<br>
+                    se oye en el manglar mugir.<br>
+                    <strong>Duerme, elefantito mío,</strong><br>
+                    <strong>que la luna te va a oír…</strong>
+                </p>
+                
+                <!-- Estrofa 3 -->
+                <p style="margin: 0 0 35px 0;">
+                    El elefante lloraba<br>
+                    con un aire de infeliz<br>
+                    y alzaba su trompa al viento;<br>
+                    parecía que en la luna<br>
+                    se limpiaba la nariz…
+                </p>
+                
+                <!-- Estrofa 4 -->
+                <p style="margin: 0;">
+                    Duerme, elefantito mío;<br>
+                    ¿por qué no quieres dormir?<br>
+                    —Estoy mirando la luna<br>
+                    que muy pronto se va a ir.
+                </p>
+                
+            </article>
+
+            <!-- COLUMNA 2: La Imagen Ilustrativa -->
+            <div style="flex: 1; min-width: 290px; text-align: center;">
+                <img src="../assets/imagenes/elefante.png" alt="Ilustración del elefantito mirando la luna" 
+                     style="width: 100%; max-width: 400px; height: auto; border-radius: 24px; box-shadow: 0 15px 35px rgba(0,0,0,0.06); border: 4px solid white;">
+            </div>
+
+        </div>
 
         <!-- Elemento decorativo o nota pedagógica opcional al final -->
-        <footer style="margin-top: 40px; text-align: center; color: #95a5a6; font-size: 0.9rem;">
+        <footer style="margin-top: 50px; text-align: center; color: #95a5a6; font-size: 0.9rem;">
             <p>💡 <em>Tip de lectura: Ideal para leer pausadamente con voz suave antes de dormir.</em></p>
         </footer>
     </main>
