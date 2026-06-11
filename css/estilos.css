@@ -143,43 +143,30 @@ body {
     color: #2b6cb0;
 }
 /* ==========================================
-   ESTILOS PARA EL MENÚ DESPLEGABLE (DROPDOWN)
+   ESTILOS PARA EL MENÚ DESPLEGABLE (DROPDOWN) - CORREGIDO
    ========================================== */
 
-/* Asegura que el contenedor del menú no corte el despliegue */
+/* Contenedor principal que sostiene Inicio y Categorías */
 .menu-navegacion .enlaces {
     display: flex;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 25px;
 }
 
-/* Elemento principal que contiene el submenú */
-.dropdown {
+/* El elemento de la lista que contiene a Categorías */
+.enlaces li {
     position: relative;
+    list-style: none !important;
+}
+
+.dropdown {
     display: inline-block;
 }
 
-/* El submenú (oculto por defecto) */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 10px 0;
-    margin: 0;
-    list-style: none;
-    z-index: 1000;
-    border: 1px solid #edf2f7;
-}
-
-/* Flecha indicadora al lado de Categorías */
+/* Flecha indicadora al lado de la palabra Categorías */
 .dropdown > a::after {
     content: " ▼";
     font-size: 0.7rem;
@@ -187,31 +174,59 @@ body {
     opacity: 0.7;
 }
 
-/* Enlaces dentro del submenú */
+/* EL SUBMENÚ: Caja flotante completamente limpia de viñetas y centrada */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-tarjeta);
+    min-width: 170px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 10px 0;
+    margin: 12px 0 0 0;
+    list-style: none !important;      /* Elimina los puntos del submenú */
+    list-style-type: none !important; /* Asegura que no pinte círculos */
+    z-index: 1000;
+    border: 1px solid #edf2f7;
+}
+
+/* Forzar que cada opción del submenú se apile de forma vertical */
+.submenu li {
+    display: block !important;
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Los enlaces que van dentro del submenú flotante */
 .submenu li a {
-    color: #2c3e50 !important;
-    padding: 10px 20px;
+    color: var(--color-texto) !important;
+    padding: 10px 22px;
     text-decoration: none;
     display: block;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: background 0.2s ease, color 0.2s ease;
     text-align: left;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-/* Efecto al pasar el mouse por las opciones del submenú */
+/* Efecto al pasar el mouse por encima de una opción (Fábulas, Cuentos, etc.) */
 .submenu li a:hover {
-    background-color: #f8fafc;
-    color: #4facfe !important;
+    background-color: #f1f5f9;
+    color: var(--color-primario) !important;
 }
 
-/* MOSTRAR EL SUBMENÚ AL PASAR EL MOUSE */
+/* COMPORTAMIENTO: Mostrar el submenú en bloque al pasar el cursor */
 .dropdown:hover .submenu {
     display: block;
-    animation: unirseSuave 0.2s ease-out;
+    animation: unirseSuave 0.25s ease-out;
 }
 
-/* Animación de aparición fluida */
+/* Animación de aparición fluida hacia arriba */
 @keyframes unirseSuave {
     from {
         opacity: 0;
