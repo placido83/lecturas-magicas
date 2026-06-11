@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Elefante Lloraba - Lecturitas</title>
-    <!-- Enlazamos al CSS subiendo un nivel con "../" -->
+    <!-- Enlazamos al CSS global subiendo un nivel -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
-    <!-- Menú de Navegación superior idéntico al index -->
+    <!-- Menú de Navegación superior -->
     <nav class="menu-navegacion">
         <div class="logo">📚 Lecturitas</div>
         <ul class="enlaces">
@@ -18,31 +18,61 @@
         </ul>
     </nav>
 
-    <!-- Contenedor de la lectura con formato de lectura limpio -->
-    <main style="max-width: 650px; margin: 40px auto; padding: 0 25px;">
-        <p style="margin-bottom: 25px;">
-            <a href="../index.html" style="text-decoration: none; color: #4facfe; font-weight: 500;">← Volver al inicio</a>
+    <!-- Contenedor principal centrado -->
+    <main style="max-width: 600px; margin: 50px auto; padding: 0 25px;">
+        <p style="margin-bottom: 30px;">
+            <a href="../index.html" style="text-decoration: none; color: #4facfe; font-weight: 600; font-size: 0.95rem;">← Volver al inicio</a>
         </p>
         
-        <header style="margin-bottom: 35px;">
-            <span style="display: inline-block; background: #fff0f6; color: #d63384; padding: 5px 15px; border-radius: 15px; font-size: 0.85rem; font-weight: 600; margin-bottom: 10px;">Poesía Infantil</span>
-            <h1 style="font-family: 'Fredoka', sans-serif; font-size: 2.6rem; color: #2c3e50; margin: 0;">El Elefante Lloraba</h1>
+        <!-- Encabezado del Poema -->
+        <header style="margin-bottom: 40px; text-align: center;">
+            <span style="display: inline-block; background: #fff0f6; color: #d63384; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 15px; letter-spacing: 0.5px;">POESÍA INFANTIL</span>
+            <h1 style="font-family: 'Fredoka', sans-serif; font-size: 2.8rem; color: #2c3e50; margin: 0 0 10px 0;">El Elefante Lloraba</h1>
+            <p style="color: #7f8c8d; font-style: italic; font-size: 1.05rem; margin: 0;">por Adriano del Valle</p>
         </header>
         
-        <!-- Aquí va el cuerpo de la lectura en un formato cómodo para los ojos -->
-        <article style="font-size: 1.25rem; line-height: 1.9; color: #34495e; letter-spacing: 0.3px;">
-            <!-- Puedes estructurar los versos o párrafos con la etiqueta <p> -->
-            <p style="margin-bottom: 20px; font-style: italic;">
-                Escribe aquí los primeros versos o párrafos del poema.<br>
-                Cada línea rota con un salto de línea si prefieres mantener la estructura de poema,<br>
-                o párrafos separados para que sea fácil de leer por un niño.
+        <!-- Cuerpo del Poema estructurado por estrofas -->
+        <article style="font-size: 1.35rem; line-height: 2; color: #2c3e50; text-align: center; background: #ffffff; padding: 40px 30px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); border: 1px solid #edf2f7;">
+            
+            <!-- Estrofa 1 -->
+            <p style="margin: 0 0 35px 0;">
+                El elefante lloraba<br>
+                porque no quería dormir…<br>
+                <strong>Duerme, elefantito mío,</strong><br>
+                <strong>que la luna te va a oír…</strong>
             </p>
             
-            <p style="margin-bottom: 20px; font-style: italic;">
-                Aquí continuaría la siguiente estrofa del poema...<br>
-                Con un diseño limpio, centrado en la lectura y sin distracciones obsoletas.
+            <!-- Estrofa 2 -->
+            <p style="margin: 0 0 35px 0;">
+                Papá elefante está cerca;<br>
+                se oye en el manglar mugir.<br>
+                <strong>Duerme, elefantito mío,</strong><br>
+                <strong>que la luna te va a oír…</strong>
             </p>
+            
+            <!-- Estrofa 3 -->
+            <p style="margin: 0 0 35px 0;">
+                El elefante lloraba<br>
+                con un aire de infeliz<br>
+                y alzaba su trompa al viento;<br>
+                parecía que en la luna<br>
+                se limpiaba la nariz…
+            </p>
+            
+            <!-- Estrofa 4 -->
+            <p style="margin: 0;">
+                Duerme, elefantito mío;<br>
+                ¿por qué no quieres dormir?<br>
+                —Estoy mirando la luna<br>
+                que muy pronto se va a ir.
+            </p>
+            
         </article>
+
+        <!-- Elemento decorativo o nota pedagógica opcional al final -->
+        <footer style="margin-top: 40px; text-align: center; color: #95a5a6; font-size: 0.9rem;">
+            <p>💡 <em>Tip de lectura: Ideal para leer pausadamente con voz suave antes de dormir.</em></p>
+        </footer>
     </main>
 
 </body>
