@@ -9,7 +9,7 @@ Este es un espacio personal donde comparto poemas, cuentos y libros que me encan
 ## 📖 Últimas lecturas:
 
 {% for post in site.posts %}
-- **[{{ post.title }}]({{ post.url }})** 
+- **[{{ post.title }}]({{ site.baseurl }}{{ post.url }})**
   *Autor: {{ post.author }} | Recomendado para: {{ post.edad_recomendada }}*
   {{ post.excerpt }}
 {% endfor %}
