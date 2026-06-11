@@ -40,6 +40,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.enlaces li {
+    list-style: none;
+}
 .enlaces a {
     text-decoration: none;
     color: #7f8c8d;
@@ -141,99 +144,4 @@ body {
 }
 .boton-leer:hover {
     color: #2b6cb0;
-}
-/* ==========================================
-   ESTILOS PARA EL MENÚ DESPLEGABLE (DROPDOWN) - CORREGIDO
-   ========================================== */
-
-/* Contenedor principal que sostiene Inicio y Categorías */
-.menu-navegacion .enlaces {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 25px;
-}
-
-/* El elemento de la lista que contiene a Categorías */
-.enlaces li {
-    position: relative;
-    list-style: none !important;
-}
-
-.dropdown {
-    display: inline-block;
-}
-
-/* Flecha indicadora al lado de la palabra Categorías */
-.dropdown > a::after {
-    content: " ▼";
-    font-size: 0.7rem;
-    vertical-align: middle;
-    opacity: 0.7;
-}
-
-/* EL SUBMENÚ: Caja flotante completamente limpia de viñetas y centrada */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--color-tarjeta);
-    min-width: 170px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 14px;
-    padding: 10px 0;
-    margin: 12px 0 0 0;
-    list-style: none !important;      /* Elimina los puntos del submenú */
-    list-style-type: none !important; /* Asegura que no pinte círculos */
-    z-index: 1000;
-    border: 1px solid #edf2f7;
-}
-
-/* Forzar que cada opción del submenú se apile de forma vertical */
-.submenu li {
-    display: block !important;
-    list-style: none !important;
-    list-style-type: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Los enlaces que van dentro del submenú flotante */
-.submenu li a {
-    color: var(--color-texto) !important;
-    padding: 10px 22px;
-    text-decoration: none;
-    display: block;
-    font-size: 0.95rem;
-    font-weight: 500;
-    text-align: left;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-/* Efecto al pasar el mouse por encima de una opción (Fábulas, Cuentos, etc.) */
-.submenu li a:hover {
-    background-color: #f1f5f9;
-    color: var(--color-primario) !important;
-}
-
-/* COMPORTAMIENTO: Mostrar el submenú en bloque al pasar el cursor */
-.dropdown:hover .submenu {
-    display: block;
-    animation: unirseSuave 0.25s ease-out;
-}
-
-/* Animación de aparición fluida hacia arriba */
-@keyframes unirseSuave {
-    from {
-        opacity: 0;
-        transform: translateX(-50%) translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
 }
