@@ -18,25 +18,27 @@
             background-color: #f2f2f2;
             position: relative;
         }
-        /* ENCABEZADO UPEL CON MARCO PARA IMAGEN */
+        /* ENCABEZADO UPEL CON IMAGEN INTEGRADA */
         .header {
             display: flex;
             align-items: center;
             margin-bottom: 40px;
         }
         .upel-logo-frame {
-            width: 130px;
+            width: 120px;
             height: 75px;
-            border: 2px dashed #000080;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #ffffff;
             margin-right: 15px;
-            text-align: center;
-            font-size: 11px;
-            color: #555;
-            font-weight: bold;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 4px;
+        }
+        .upel-logo-frame img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         .header-text {
             font-size: 12px;
@@ -119,23 +121,32 @@
             align-items: center;
             margin-right: 20px;
         }
-        .qr-placeholder {
+        .qr-box {
             width: 90px;
             height: 90px;
-            border: 2px dashed #000;
+            border: 1px solid #ccc;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: white;
-            text-align: center;
-            font-size: 10px;
-            color: #555;
-            font-weight: bold;
+            padding: 4px;
+        }
+        .qr-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         .qr-label {
             font-size: 11px;
             font-weight: bold;
             margin-top: 5px;
+        }
+        .qr-label a {
+            color: #000080;
+            text-decoration: underline;
+        }
+        .qr-label a:hover {
+            color: #000;
         }
         .datos {
             font-size: 14px;
@@ -150,9 +161,8 @@
     
     <!-- ENCABEZADO -->
     <div class="header">
-        <!-- Marco para insertar imagen de la UPEL -->
         <div class="upel-logo-frame">
-            [ Espacio para Logo UPEL ]
+            <img src="https://raw.githubusercontent.com/placido83/lecturas-magicas/refs/heads/main/assets/imagenes/logo%20upel.webp" alt="Logo UPEL">
         </div>
         <div class="header-text">
             REPUBLICA BOLIVARIANA DE VENEZUELA<br>
@@ -235,14 +245,15 @@
         
     </div>
 
-    <!-- PIE DE PÁGINA (DATOS Y MARCO QR) -->
+    <!-- PIE DE PÁGINA (DATOS Y CÓDIGO QR) -->
     <div class="footer">
         <div class="qr-frame-container">
-            <!-- Marco para insertar imagen del Código QR -->
-            <div class="qr-placeholder">
-                [ Imagen QR ]
+            <div class="qr-box">
+                <img src="https://raw.githubusercontent.com/placido83/lecturas-magicas/refs/heads/main/assets/imagenes/Captura%20de%20pantalla%202026-09-28%20124815.png" alt="Código QR">
             </div>
-            <div class="qr-label">para saber mas</div>
+            <div class="qr-label">
+                <a href="https://joint-research-centre.ec.europa.eu/scientific-activities/key-competences-lifelong-learning/digcompedu/digcompedu-framework_en?utm_source=gemini" target="_blank">para saber mas</a>
+            </div>
         </div>
         <div class="datos">
             FACILITADOR: YORMAN CACERES<br>
